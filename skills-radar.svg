@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="56 40 728 548" width="728" height="548" role="img" aria-label="Hexagonal skill radar: Full-Stack Development, Cybersecurity, AI, Embedded Systems, Cloud Native / DevOps, Data Engineering / System Architecture">
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    #radar .grid {
+      fill: none;
+      stroke: #30363d;
+      stroke-width: 1;
+    }
+    #radar .grid-outer {
+      stroke: #484f58;
+      stroke-width: 1.25;
+    }
+    #radar .axes line {
+      fill: none;
+    }
+    #radar .data-area {
+      fill: url(#skillFill);
+      stroke: url(#skillStroke);
+      stroke-width: 2.25;
+      stroke-linejoin: round;
+    }
+    #radar .point {
+      stroke: #0d1117;
+      stroke-width: 1.75;
+    }
+    #radar .scale text {
+      font-weight: 500;
+    }
+  </style>
+  <rect class="page-bg" x="56" y="40" width="728" height="548" rx="16" fill="#0d1117"/>
+  <defs>
+    <linearGradient id="skillFill" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.42"/>
+      <stop offset="48%" stop-color="#3b82f6" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.40"/>
+    </linearGradient>
+    <linearGradient id="skillStroke" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.55 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="radar">
+    <polygon id="grid-2" class="grid" points="440.0000,300.0000 470.3109,317.5000 470.3109,352.5000 440.0000,370.0000 409.6891,352.5000 409.6891,317.5000"/>
+    <polygon id="grid-4" class="grid" points="440.0000,265.0000 500.6218,300.0000 500.6218,370.0000 440.0000,405.0000 379.3782,370.0000 379.3782,300.0000"/>
+    <polygon id="grid-6" class="grid" points="440.0000,230.0000 530.9327,282.5000 530.9327,387.5000 440.0000,440.0000 349.0673,387.5000 349.0673,282.5000"/>
+    <polygon id="grid-8" class="grid" points="440.0000,195.0000 561.2436,265.0000 561.2436,405.0000 440.0000,475.0000 318.7564,405.0000 318.7564,265.0000"/>
+    <polygon id="grid-10" class="grid grid-outer" points="440.0000,160.0000 591.5544,247.5000 591.5544,422.5000 440.0000,510.0000 288.4456,422.5000 288.4456,247.5000"/>
+
+    <g class="axes" stroke="#30363d" stroke-width="1">
+      <line x1="440" y1="335" x2="440.0000" y2="160.0000"/>
+      <line x1="440" y1="335" x2="591.5544" y2="247.5000"/>
+      <line x1="440" y1="335" x2="591.5544" y2="422.5000"/>
+      <line x1="440" y1="335" x2="440.0000" y2="510.0000"/>
+      <line x1="440" y1="335" x2="288.4456" y2="422.5000"/>
+      <line x1="440" y1="335" x2="288.4456" y2="247.5000"/>
+    </g>
+
+    <g class="scale" fill="#6e7681" font-size="11" font-weight="500" text-anchor="end">
+      <text x="432" y="304">2</text>
+      <text x="432" y="269">4</text>
+      <text x="432" y="234">6</text>
+      <text x="432" y="199">8</text>
+      <text x="432" y="164">10</text>
+    </g>
+
+    <polygon id="data-area" class="data-area" filter="url(#softGlow)"
+      points="440.0000,212.5000 500.6218,300.0000 500.6218,370.0000 440.0000,352.5000 424.8446,343.7500 409.6891,317.5000"/>
+
+    <g id="data-points">
+      <circle class="point point-0" cx="440.0000" cy="212.5000" r="5.5" fill="#22d3ee"/>
+      <circle class="point point-1" cx="500.6218" cy="300.0000" r="5.5" fill="#38bdf8"/>
+      <circle class="point point-2" cx="500.6218" cy="370.0000" r="5.5" fill="#3b82f6"/>
+      <circle class="point point-3" cx="440.0000" cy="352.5000" r="5.5" fill="#6366f1"/>
+      <circle class="point point-4" cx="424.8446" cy="343.7500" r="5.5" fill="#8b5cf6"/>
+      <circle class="point point-5" cx="409.6891" cy="317.5000" r="5.5" fill="#a78bfa"/>
+    </g>
+
+    <g class="axis-labels" fill="#e6edf3" font-size="15" font-weight="600">
+      <text class="label-0" x="440" y="82" text-anchor="middle">
+        <tspan x="440" dy="0">Full-Stack</tspan>
+        <tspan x="440" dy="19">Development</tspan>
+      </text>
+      <text class="label-1" x="608" y="244" text-anchor="start">Cybersecurity</text>
+      <text class="label-2" x="608" y="432" text-anchor="start">AI</text>
+      <text class="label-3" x="440" y="536" text-anchor="middle">
+        <tspan x="440" dy="0">Embedded</tspan>
+        <tspan x="440" dy="19">Systems</tspan>
+      </text>
+      <text class="label-4" x="272" y="430" text-anchor="end">
+        <tspan x="272" dy="0">Cloud Native /</tspan>
+        <tspan x="272" dy="19">DevOps</tspan>
+      </text>
+      <text class="label-5" x="272" y="214" text-anchor="end">
+        <tspan x="272" dy="0">Data Engineering /</tspan>
+        <tspan x="272" dy="19">System Architecture</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
