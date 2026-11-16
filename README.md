@@ -1,5 +1,3 @@
-## Hi there 👋
-
 <!--
 **zol9527/zol9527** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -28,7 +26,7 @@ Here are some ideas to get you started:
     </tr>
   </table>
   <h1>zol9527</h1>
-  <p>本来很喜欢 Full Stack，想着把自己的想法一个个做出来，没想到一路折腾，入了国军 Cyber Security。</p>
+  <p>入了国军 Cyber Security</p>
   <p></p>
 </div>
 
