@@ -33,3 +33,11 @@ Here are some ideas to get you started:
 </div>
 
 <br>
+
+<div align="center">
+  <img
+    src="./skills-radar.svg"
+    alt="Skills radar chart"
+    width="720"
+  />
+</div>
